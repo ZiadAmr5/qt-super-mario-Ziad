@@ -27,7 +27,7 @@ int main(int argc, char* argv[]) {
 
   QTimer timer;
   QObject::connect(&timer, &QTimer::timeout, &player, &Player::update);
-  timer->start(16);
+  timer.start(33);
 
   return app.exec();
 }

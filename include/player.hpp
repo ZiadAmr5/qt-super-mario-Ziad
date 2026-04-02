@@ -11,7 +11,7 @@ class Player : public QObject, public QGraphicsRectItem {
  protected:
   void keyPressEvent(QKeyEvent* event) override;
 
- private slots:
+ public slots:
   void update();
 
  private:
